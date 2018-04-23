@@ -4,7 +4,7 @@ jscalpel orm
 ## Installation
 
 #### Install using npm 
-[![jscalpel-orm](https://nodei.co/npm/jscalpel.png)](https://npmjs.org/package/jscalpel-orm)
+[![jscalpel-orm](https://nodei.co/npm/jscalpel-orm.png)](https://npmjs.org/package/jscalpel-orm)
 ``` 
 npm install jscalpel-orm --save
 yarn add jscalpel-orm --save
