@@ -1,4 +1,4 @@
-const jscalpel = require('jscalpel');
+import jscalpel from 'jscalpel';
 import { isObject } from './utils';
 const jscalpelORM = (source = {}, rules, defaultValue) => {
   if (!isObject(source)) {
