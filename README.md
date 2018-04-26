@@ -29,8 +29,9 @@ yarn add jscalpel-orm --save
 | _extraInfo | object |   empty object | extra info |false |no |
 
 ## Demos
+
+#### es6
 ```javascript
-// es6
 import jscalpelORM from 'jscalpelORM';
 const source = {
   data: {
@@ -63,7 +64,9 @@ const newTarget = jscalpelORM(source, rules, _extraInfo);
  msg: 'msg',
  name: 'jscalpelORM',
 }
-// es5
+```
+#### es5
+```javascript
 var source = {
   data: {
     articles: [{
