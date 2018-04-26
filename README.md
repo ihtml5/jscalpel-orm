@@ -66,7 +66,7 @@ const newTarget = jscalpelORM(source, rules, _extraInfo);
 }
 </pre>
 #### es5
-<code>
+<pre>
 var source = {
   data: {
     articles: [{
@@ -98,4 +98,4 @@ var newTarget = jscalpelORM(source, rules, _extraInfo);
  msg: 'msg',
  name: 'jscalpelORM',
 }
-</code>
+</pre>
