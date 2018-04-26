@@ -10,7 +10,7 @@ const jscalpelORM = (source = {}, rules, defaultValue) => {
     return defaultValue;
   }
   try {
-    const targetPath = Object.keys(rules);
+    const targetPath = Object.values(rules);
     const _extraInfo = rules._extraInfo || {};
     const target = {};
     const jscalpelIns = jscalpel({
