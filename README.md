@@ -1,6 +1,6 @@
 # jscalpel-orm
 It is convenient for you to extract the required fields from one object to generate another object.
-## depencendy
+## dependency
 [jscalpel](http://www.github.com/ihtml5/jscalpel)
 ## Installation
 
