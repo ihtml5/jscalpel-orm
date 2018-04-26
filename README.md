@@ -19,7 +19,6 @@ yarn add jscalpel-orm --save
 #### Include in html
 ```javascript
   <script charset="utf-8" src="https://unpkg.com/jscalpel-orm@latest/dist/index.js"></script>
-  jscalpelORM.default
 ```
 ## APIS
 | parameter	| type|	default value |	use|	isRequired	| required version   |
