@@ -10,7 +10,7 @@ export default {
     file: './dist/index.js',
     format: 'umd',
     exports: 'named',
-    name: 'jscalpel',
+    name: 'jscalpelORM',
     sourceMap: false
   },
   plugins: [
