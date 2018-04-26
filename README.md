@@ -19,4 +19,84 @@ yarn add jscalpel-orm --save
 #### Include in html
 ```javascript
   <script charset="utf-8" src="https://unpkg.com/jscalpel-orm@latest/dist/index.js"></script>
+  jscalpelORM.default
+```
+## APIS
+| parameter	| type|	default value |	use|	isRequired	| required version   |
+|----------|:-------------:|------:|------:|------:|------:|
+| col 1 is |  left-aligned | $1600 |$1600 |$1600 |$1600 |
+| col 2 is |    centered   |   $12 |$1600 |$1600 |$1600 |
+| col 3 is | right-aligned |    $1 |$1600 |$1600 |$1600 |
+
+作者：cxuan
+链接：https://www.jianshu.com/p/7a655e5345b2
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+## Demos
+```javascript
+// es6
+import jscalpelORM from 'jscalpelORM';
+const source = {
+  data: {
+    articles: [{
+      imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+      title: ‘jscalpelORM'
+    }],
+  },
+  msg: 'ok',
+  code: 0,
+}
+const rules = {
+  imgUrl: 'data.articles.0.imgUrl',
+  msg: 'msg',
+  articles: 'data.articles',
+  title: 'data.articles.0.imgUrl',
+};
+const _extraInfo = {
+  name: 'jscalpelORM',
+};
+const newTarget = jscalpelORM(source, rules, _extraInfo);
+// output
+{
+ imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+ title: ‘jscalpelORM',
+ articles: [{
+   imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+   title: ‘jscalpelORM'
+ }],
+ msg: 'msg',
+ name: 'jscalpelORM',
+}
+// es5
+var source = {
+  data: {
+    articles: [{
+      imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+      title: ‘jscalpelORM'
+    }],
+  },
+  msg: 'ok',
+  code: 0,
+}
+var rules = {
+  imgUrl: 'data.articles.0.imgUrl',
+  msg: 'msg',
+  articles: 'data.articles',
+  title: 'data.articles.0.imgUrl',
+};
+var _extraInfo = {
+  name: 'jscalpelORM',
+};
+var newTarget = jscalpelORM(source, rules, _extraInfo);
+// output
+{
+ imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+ title: ‘jscalpelORM',
+ articles: [{
+   imgUrl: 'https://avatars0.githubusercontent.com/u/6822604?s=460&v=4',
+   title: ‘jscalpelORM'
+ }],
+ msg: 'msg',
+ name: 'jscalpelORM',
+}
 ```
