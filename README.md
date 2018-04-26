@@ -31,7 +31,7 @@ yarn add jscalpel-orm --save
 ## Demos
 
 #### es6
-```javascript
+<pre>
 import jscalpelORM from 'jscalpelORM';
 const source = {
   data: {
@@ -64,9 +64,9 @@ const newTarget = jscalpelORM(source, rules, _extraInfo);
  msg: 'msg',
  name: 'jscalpelORM',
 }
-```
+</pre>
 #### es5
-```javascript
+<code>
 var source = {
   data: {
     articles: [{
@@ -98,4 +98,4 @@ var newTarget = jscalpelORM(source, rules, _extraInfo);
  msg: 'msg',
  name: 'jscalpelORM',
 }
-```
+</code>
